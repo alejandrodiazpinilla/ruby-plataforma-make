@@ -69,3 +69,131 @@
 # santa_claus(3) #=> "jojojo
 
 #reto 8
+# def adjust_text(text , length)
+#   if text.length < length
+#     text.ljust(length)
+#     else 
+#     text[0...length]
+#  end
+# end
+# reto 9
+# def multiplier(num1 ,num2)   
+#   n = []
+#   num1.each do |num|
+#     n << num * num2    
+#   end
+#   n   
+# end
+# reto 10
+# def defaults
+#  puts  de = {:temperature 10 , :altitude 12000 , :pressure 500 }
+  
+# end
+
+# def defaults(text)
+#   return text
+# end
+# text = {temperature: 10, altitude: 12000, pressure: 500}
+
+# def defaults(a)
+#   puts  text = {temperature: a , altitude:  a, pressure: a}
+# end
+# defaults([10 , 12200 ,])
+# defaults(12000)
+# defaults(500)
+
+
+# def defaults(a)
+#   a.each do |nums|
+#     if nums == 10
+#     a = {temperature: 10} 
+#     puts a
+#     elsif  nums == 12000
+#     a =  {altitude: 12000}
+#     puts a
+#     else nums == 500
+#       a = {pressure: 500}
+#       puts a
+
+#     end
+#   end
+# end
+# defaults([10 , 12000 , 500])
+# defaults(12000)
+# defaults(500)
+
+
+
+
+# reto
+# def maximo(*num)
+#  puts num.max
+# end
+
+# def minimo(*num)
+#  puts   num.min
+# end
+
+
+# maximo(5, 10, 20, 50, 32)
+# #=> 50
+
+# minimo(3, 44, 2, 8)
+# #=> 2
+
+
+
+# resto
+
+# def is_plate?(string)
+#   if string == ""
+#     puts false
+#   elsif string == string.upcase
+#    puts true
+#   else  string == string.downcase
+#   puts  false
+#   end  
+# end
+
+# is_plate?("") #=> false
+# is_plate?("MVV387") #=> true
+# is_plate?("mvv387") #=> false
+
+# def is_plate?(string)
+#  text = /[A-Z]{3}(\d{3})/.match(string)
+#   if text  
+#   puts  true
+#   else  text
+#   puts  false
+#   end
+# end
+
+# is_plate?("") #=> false
+# is_plate?("MVV387") #=> true
+# is_plate?("mvv387") #=> false
+
+#reto
+# def write(nombre, cadena)
+#   text = File.open("#{nombre}", "w") do |file|
+#     file.write("#{cadena}") 
+#   end
+# end
+
+# write("test.txt", "Hola mundo") # Crea un archivo test.txt con contenido "Hola Mundo"
+
+
+
+#reto
+def read(archivo)
+  if File.exist?("#{archivo}")
+    puts "código si el archivo existe"
+  else
+    puts "código si el archivo no existe"
+  end
+emd
+# el archivo test.txt existe y contiene "Hola Mundo"
+read('test.txt') #=> "Hola Mundo"
+
+# el archivo test.txt no existe
+read('') #=> nil
+
