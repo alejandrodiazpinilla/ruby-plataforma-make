@@ -184,16 +184,87 @@
 
 
 #reto
-def read(archivo)
-  if File.exist?("#{archivo}")
-    puts "código si el archivo existe"
-  else
-    puts "código si el archivo no existe"
-  end
-emd
-# el archivo test.txt existe y contiene "Hola Mundo"
-read('test.txt') #=> "Hola Mundo"
+# def read(archivo)
+#   if  File.exist?("#{archivo}")
+#     File.foreach("#{archivo}") do |line|
+#       puts line    
+#   end
+#   else
+#     puts nil
+#   end
+# end
 
-# el archivo test.txt no existe
-read('') #=> nil
+# # el archivo test.txt existe y contiene "Hola Mundo"
+# read('test.txt') #=> "Hola Mundo"
+
+# # el archivo test.txt no existe
+# read('test.txt') #=> nil
+
+
+# #reto pendiente 
+# def load_tasks(archivo)
+#   if  File.exist?("#{archivo}")
+#     content = File.read("#{archivo}") # lee el archivo
+#     lines = content.split("\n") # divide el contenido en líneas
+#     lines.each do |line, value|
+#       puts "#{line} , #{value} "
+#     end
+#   else
+#     puts [{}]
+#   end  
+# end 
+
+# def save_tasks
+  
+# end
+
+    # File.foreach("#{archivo}") do |line|
+    #   puts [line]    
+    # end
+
+   # reto 
+# class Dog
+#   def bark
+#     puts "woof-woof"
+#   end  
+# end
+
+#reto 
+class Car 
+  attr_accessor :velo
+  def velocity 
+   velocity = 0
+  end
+  def accelerate(*num) 
+    if num !=	 2
+      def velocity 
+        @velo = 1 
+        end
+      end
+      if num == 2
+    def velocity 
+      @velo = 1 + 2
+      end
+    end
+    end
+  def brake(*nums) 
+    0
+  end
+end
+
+car = Car.new
+car.velocity # => 0
+
+car.accelerate
+car.velocity # => 1
+
+car.accelerate(2)
+car.velocity # => 3
+
+car.brake
+car.velocity # => 2
+
+car.brake(2)
+car.velocity # => 0
+
 
