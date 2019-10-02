@@ -308,16 +308,3 @@
 # end 
 #reto
 
-
-class Person
-    attr_accessor :name
-    
-     def initialize(name)    
-      @name = name
-      if  name == "" 
-        raise ArgumentError, 'lanza ArgumentError' unless name.respond_to? ("") 
-      else name == nil
-        raise ArgumentError, 'lanza ArgumentError' unless name.respond_to? :succ
-      end
-    end
-  end
