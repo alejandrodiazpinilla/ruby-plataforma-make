@@ -274,19 +274,50 @@
 # end
  
 
+# #reto
+# class Article
+#   def initialize(body)
+#     @body = body 
+#   end
+#   def body  
+#     include TextAnalyzer  
+#   end
+# end
+# class Comment
+#   def initialize(body)
+#     @body = body 
+#   end
+#   def body 
+#   end
+# end
+
+
 #reto
-class Article
-  def initialize(body)
-    @body = body 
+
+# def load_tasks(archivo)
+#   if  File.exist?("#{archivo}")
+#     content = File.read("#{archivo}") # lee el archivo
+#     lines = content.split("\n") # divide el contenido en líneas
+#     lines.each do |line, value|
+#       return "#{line} , #{value} "
+
+#     end
+#   else
+#   return [{}]
+#   end  
+# end 
+#reto
+
+
+class Person
+    attr_accessor :name
+    
+     def initialize(name)    
+      @name = name
+      if  name == "" 
+        raise ArgumentError, 'lanza ArgumentError' unless name.respond_to? ("") 
+      else name == nil
+        raise ArgumentError, 'lanza ArgumentError' unless name.respond_to? :succ
+      end
+    end
   end
-  def body  
-    include TextAnalyzer  
-  end
-end
-class Comment
-  def initialize(body)
-    @body = body 
-  end
-  def body 
-  end
-end
