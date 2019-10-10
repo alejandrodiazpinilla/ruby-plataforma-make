@@ -310,31 +310,23 @@
 
 def phrase(text)
    # puts  text.join(",")
-   n = " "
-   text.each do |texts|
-    if texts.length == 3
+#    n = " "
+#    text.each do |texts|
+#     if texts == "tres"
+#         puts "uno, dos y tres"
         
-    elsif 
-        
-    else
-        
-    end
-      n << texts
-    end
-    puts n
-    
+#     elsif te
+
+#     end 
+#     end
+ 
+puts  "#{text}".split(',')
 end
 
-
-def multiplier(num1 ,num2)   
-    n = []
-    num1.each do |num|
-      n << num * num2    
-    end
-    n   
-end
 phrase(['uno', 'dos', 'tres']) # => "uno, dos y tres"
 phrase(['uno', 'dos']) # => "uno y dos"
 phrase(['uno']) # => "uno"
 phrase([]) # => ""
+
+
 
