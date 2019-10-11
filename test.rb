@@ -309,14 +309,12 @@
 #reto
 
 def phrase(text)
-   # puts  text.join(",")
+# puts  text.join(",")
 #    n = " "
 #    text.each do |texts|
 #     if texts == "tres"
-#         puts "uno, dos y tres"
-        
+#         puts "uno, dos y tres"        
 #     elsif te
-
 #     end 
 #     end
  
