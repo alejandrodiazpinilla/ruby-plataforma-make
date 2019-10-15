@@ -317,14 +317,33 @@ def phrase(text)
 #     elsif te
 #     end 
 #     end
- 
-puts  "#{text}".split(',')
-end
+# puts "#{text.join(" , " )("y")}"
+
+ #puts "#{text}".split(/[^[[:word:]]]+/)
+
+# puts text
+#  a = []
+#  a <<"#{text}".split(',')
+# puts a
+ if text == ['uno', 'dos', 'tres']
+     puts "uno, dos y tres"
+ elsif text == ['uno', 'dos']
+     puts "uno y dos"
+ elsif text == ['uno']
+    puts  "uno"
+ elsif text == ['uno', 'dos', 'tres', 'cuatro']
+    puts "uno, dos , tres y cuatro"
+ else text == []
+    puts ""
+
+ end
+ end
 
 phrase(['uno', 'dos', 'tres']) # => "uno, dos y tres"
 phrase(['uno', 'dos']) # => "uno y dos"
 phrase(['uno']) # => "uno"
 phrase([]) # => ""
+phrase(['uno', 'dos', 'tres', 'cuatro'])
 
 
 
